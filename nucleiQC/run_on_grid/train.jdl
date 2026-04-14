@@ -1,0 +1,70 @@
+User = "glucia";
+JobTag = {
+"comment:Hyperloop analysis"
+};
+Packages = {
+"VO_ALICE@O2Physics::daily-20260212-0000-1",
+"VO_ALICE@jq::v1.6-alice1-2"
+};
+Executable = "/alice/cern.ch/user/a/alihyperloop/bin/run_train16.sh";
+InputFile = {
+"LF:/alice/cern.ch/user/g/glucia/nucleiQC/deuterons/full_config.json"
+};
+InputDataList = "wn.xml";
+InputDataListFormat = "xml-single";
+InputDataCollection = "LF:/alice/cern.ch/user/g/glucia/nucleiQC/deuterons/train_LHC24g3/collection.xml,nodownload";
+Split = "se";
+SplitMaxInputFileNumber = "10";
+JDLProcessor = "hyperloop.HYTrain";
+ValidationCommand = "/alice/cern.ch/user/a/alihyperloop/bin/validation.sh";
+OutputDir = "/alice/cern.ch/user/g/glucia/nucleiQC/deuterons/train_LHC24g3/#alien_counter_04i#";
+Output = {
+"std*,metrics_summary.json,perf*.json,core*@disk=2",
+"AnalysisResults.root",
+"AO2D.root"
+};
+OutputErrorE = {
+"std*,perf*.json@disk=2"
+};
+Requirements = ( member(other.Packages,"VO_ALICE@O2Physics::daily-20260212-0000-1") ) && ( member(other.Packages,"VO_ALICE@jq::v1.6-alice1-2") ) && (!member(other.CloseSE,"ALICE::GSI::SE2") && !member(other.CloseSE,"ALICE::KFKI::EOS") && !member(other.CloseSE,"ALICE::KFKI::SE")) && ( other.TTL > 7200 ) && ( other.Price <= 1 );
+OrigRequirements = (!member(other.CloseSE,"ALICE::GSI::SE2") && !member(other.CloseSE,"ALICE::KFKI::EOS") && !member(other.CloseSE,"ALICE::KFKI::SE"));
+TTL = 10000;
+Price = 1.0;
+MemorySize = "1000GB";
+WorkDirectorySize = "11500MB";
+LPMChainID = "180688";
+LPMJobTypeID = "22144";
+LPMActivity = "172800";
+MaxWaitingTime = "172800";
+MaxFailFraction = "0.5";
+MaxResubmitFraction = "1";
+JDLVariables = {
+"Packages",
+"OutputDir",
+"FilesToCheck",
+"CPUCores",
+"HYRun",
+"HYJobID",
+"HYTrain",
+"LPMRunNumber",
+"LPMMetaData",
+"LPMProductionType",
+"LPMProductionTag",
+"LPMJobTypeID"
+};
+FilesToCheck = "AnalysisResults.root AO2D.root metrics_summary.json";
+CPUCores = "2";
+HYRun = "528801";
+HYJobID = "199592";
+HYTrain = "106922";
+LPMRunNumber = "528801";
+LPMMetaData = "Packages=[VO_ALICE@O2Physics::daily-20260212-0000-1, VO_ALICE@jq::v1.6-alice1-2];OutputDir=/alice/cern.ch/user/g/glucia/nucleiQC/deuterons/train_LHC24g3/#alien_counter_04i#;FilesToCheck=AnalysisResults.root AO2D.root metrics_summary.json;CPUCores=2;HYRun=528801;HYJobID=199592;HYTrain=106922;MasterJobID=null;LPMRunNumber=528801;LPMProductionType=MC;LPMProductionTag=Hyperloop analysis;LPMJobTypeID=22144";
+LPMProductionType = "MC";
+LPMProductionTag = "Hyperloop analysis";
+MaxOutputSize = "524288000";
+DataframeSize = "100000000";
+LPMMaxResubmissions = "1";
+LegoResubmitZombies = "1";
+InputDataType = "AO2D";
+Activity = "Hyperloop;Processing";
+Type = "Job";

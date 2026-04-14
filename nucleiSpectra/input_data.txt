@@ -1,0 +1,8 @@
+/data/galucia/nucleiQC/LHC24i5/AOD_120.root
+/data/galucia/nucleiQC/LHC24i5/AOD_907.root
+/data/galucia/nucleiQC/LHC24i5/AOD_759.root
+/data/galucia/nucleiQC/LHC24i5/AOD_788.root
+/data/galucia/nucleiQC/LHC24i5/AOD_959.root
+/data/galucia/nucleiQC/LHC24i5/AOD_622.root
+/data/galucia/nucleiQC/LHC24i5/AOD_054.root
+/data/galucia/nucleiQC/LHC24i5/AOD_757.root

@@ -1,0 +1,8 @@
+/data/galucia/nucleiQC/LHC25a3/AOD_021.root
+/data/galucia/nucleiQC/LHC25a3/AOD_007.root
+/data/galucia/nucleiQC/LHC25a3/AOD_020.root
+/data/galucia/nucleiQC/LHC25a3/AOD_019.root
+/data/galucia/nucleiQC/LHC25a3/AOD_009.root
+/data/galucia/nucleiQC/LHC25a3/AOD_012.root
+/data/galucia/nucleiQC/LHC25a3/AOD_005.root
+/data/galucia/nucleiQC/LHC25a3/AOD_008.root

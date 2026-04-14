@@ -1,0 +1,677 @@
+{
+    "mult-cent-table": {
+        "generatorName": "",
+        "processRun3WithGlobalCounters": "0",
+        "processMFT": "0",
+        "processRun3": "1",
+        "processCentralityRun2": "0",
+        "processRun2": "0",
+        "processMonteCarlo2Mults": "0",
+        "enabledTables": {
+            "values": [
+                [
+                    -1
+                ],
+                [
+                    -1
+                ],
+                [
+                    -1
+                ],
+                [
+                    -1
+                ],
+                [
+                    -1
+                ],
+                [
+                    -1
+                ],
+                [
+                    -1
+                ],
+                [
+                    -1
+                ],
+                [
+                    -1
+                ],
+                [
+                    -1
+                ],
+                [
+                    -1
+                ],
+                [
+                    -1
+                ],
+                [
+                    -1
+                ],
+                [
+                    -1
+                ],
+                [
+                    -1
+                ],
+                [
+                    -1
+                ],
+                [
+                    -1
+                ],
+                [
+                    -1
+                ],
+                [
+                    -1
+                ],
+                [
+                    -1
+                ],
+                [
+                    -1
+                ],
+                [
+                    -1
+                ],
+                [
+                    -1
+                ],
+                [
+                    -1
+                ],
+                [
+                    -1
+                ],
+                [
+                    -1
+                ],
+                [
+                    -1
+                ],
+                [
+                    -1
+                ],
+                [
+                    -1
+                ],
+                [
+                    -1
+                ],
+                [
+                    -1
+                ],
+                [
+                    -1
+                ],
+                [
+                    -1
+                ],
+                [
+                    -1
+                ],
+                [
+                    -1
+                ],
+                [
+                    -1
+                ],
+                [
+                    -1
+                ],
+                [
+                    -1
+                ],
+                [
+                    -1
+                ]
+            ]
+        },
+        "maxPtGlobalTrack": "1e+10",
+        "embedINELgtZEROselection": "0",
+        "minPtGlobalTrack": "0.15",
+        "autoConfigureProcess": "0",
+        "ccdbPathCentrality": "Centrality/Estimators",
+        "doVertexZeq": "1",
+        "ccdbPathVtxZ": "Centrality/Calibration",
+        "minNclsITSibGlobalTrack": "1",
+        "reconstructionPass": "",
+        "ccdburl": "http://alice-ccdb.cern.ch",
+        "processCentralityRun3": "1",
+        "minNclsITSGlobalTrack": "5",
+        "processMonteCarlo": "0"
+    },
+    "eventselection-run3": {
+        "evselOpts.NumberOfOrbitsPerTF": "-1",
+        "timestamp.fatalOnInvalidTimestamp": "0",
+        "evselOpts.TimeRangeVetoOnCollNarrow": "0.25",
+        "evselOpts.VzDiffNsigma": "3",
+        "evselOpts.maxDiffZvtxFT0vsPV": "3",
+        "bcselOpts.checkRunDurationLimits": "0",
+        "evselOpts.amIneeded": "-1",
+        "evselOpts.EpsilonVzDiffVetoInROF": "0.3",
+        "evselOpts.isMC": "-1",
+        "bcselOpts.ITSROFrameStartBorderMargin": "-1",
+        "timestamp.isRun2MC": "-1",
+        "bcselOpts.TimeFrameStartBorderMargin": "-1",
+        "bcselOpts.triggerBcShift": "0",
+        "evselOpts.FT0CamplPerCollCutVetoOnCollInROF": "5000",
+        "timestamp.orbit-reset-path": "CTP/Calib/OrbitReset",
+        "evselOpts.TimeIntervalForOccupancyCalculationMin": "-40",
+        "evselOpts.TimeRangeVetoOnCollStrict": "10",
+        "timestamp.rct-path": "RCT/Info/RunInformation",
+        "bcselOpts.maxInactiveChipsPerLayer": {
+            "values": [
+                8,
+                8,
+                8,
+                111,
+                111,
+                195,
+                195
+            ]
+        },
+        "lumiOpts.amIneeded": "-1",
+        "evselOpts.confSigmaBCforHighPtTracks": "4",
+        "evselOpts.FT0CamplPerCollCutVetoOnCollInTimeRange": "8000",
+        "bcselOpts.ITSROFrameEndBorderMargin": "-1",
+        "evselOpts.VzDiffMargin": "0.2",
+        "bcselOpts.amIneeded": "-1",
+        "evselOpts.TimeIntervalForOccupancyCalculationMax": "100",
+        "ccdburl": "http://alice-ccdb.cern.ch",
+        "evselOpts.muonSelection": "0",
+        "evselOpts.UseWeightsForOccupancyEstimator": "1",
+        "bcselOpts.TimeFrameEndBorderMargin": "-1",
+        "bcselOpts.NumberOfOrbitsPerTF": "-1",
+        "timestamp.verbose": "0"
+    },
+    "tof-signal": {
+        "parametrizationPath": "TOF/Calib/Params",
+        "fatalOnPassNotAvailable": "0",
+        "timeShiftCCDBPathPosMC": "",
+        "paramFileName": "",
+        "processRun3": "1",
+        "enableTimeDependentResponse": "1",
+        "processRun2": "0",
+        "ccdb-path-grplhcif": "GLO/Config/GRPLHCIF",
+        "collisionSystem": "-1",
+        "enableQaHistograms": "0",
+        "timeShiftCCDBPathPos": "Analysis/PID/TOFOffsetPos",
+        "ccdb-timestamp": "-1",
+        "autoSetProcessFunctions": "1",
+        "timeShiftCCDBPathNeg": "Analysis/PID/TOFOffsetPos",
+        "reconstructionPass": "metadata",
+        "timeShiftCCDBPathNegMC": "",
+        "ccdb-url": "http://alice-ccdb.cern.ch",
+        "reconstructionPassDefault": "unanchored"
+    },
+    "tof-event-time": {
+        "computeEvTimeWithTOF": "1",
+        "minMomentum": "0.5",
+        "maxNtracksInSet": "10",
+        "sel8TOFEvTime": "0",
+        "maxMomentum": "2",
+        "maxEvTimeTOF": "100000",
+        "processRun3": "1",
+        "computeEvTimeWithFT0": "1",
+        "processRun2": "0"
+    },
+    "tof-pid-merge": {
+        "enableParticle": {
+            "values": [
+                [
+                    -1,
+                    -1
+                ],
+                [
+                    -1,
+                    -1
+                ],
+                [
+                    -1,
+                    -1
+                ],
+                [
+                    -1,
+                    -1
+                ],
+                [
+                    -1,
+                    -1
+                ],
+                [
+                    -1,
+                    -1
+                ],
+                [
+                    -1,
+                    -1
+                ],
+                [
+                    -1,
+                    -1
+                ],
+                [
+                    -1,
+                    -1
+                ]
+            ]
+        },
+        "processRun2BetaM": "0",
+        "processRun3": "1",
+        "processRun2": "0",
+        "enableTOFParamsForBetaMass": "0",
+        "processRun3BetaM": "0",
+        "enableQaHistograms": "0"
+    },
+    "ft0-corrected-table": {
+        "ccdb-timestamp": "-1",
+        "resoFT0C": "20",
+        "ccdb-path-grplhcif": "GLO/Config/GRPLHCIF",
+        "resoFT0A": "20",
+        "collisionSystem": "-2",
+        "addHistograms": "0",
+        "ccdb-url": "http://alice-ccdb.cern.ch",
+        "processWithBypassFT0timeInMC": "0",
+        "processStandard": "1"
+    },
+    "nuclei-spectra": {
+        "cfgSelectTrgEv": "0",
+        "cfgPtBinsDeuterons": {
+            "values": [
+                100,
+                0,
+                10
+            ]
+        },
+        "cfgCutPtMinTree": "0.2",
+        "cfgNITSClusBins": {
+            "values": [
+                3,
+                4.5,
+                7.5
+            ]
+        },
+        "cfgCutVertex": "10",
+        "cfgTOFmassBins": {
+            "values": [
+                400,
+                -5,
+                5
+            ]
+        },
+        "cfgDCAHists": {
+            "values": [
+                [
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0
+                ]
+            ]
+        },
+        "cfgCentralityBins": {
+            "values": [
+                1,
+                0,
+                100
+            ]
+        },
+        "cfgV2Bins": {
+            "values": [
+                100,
+                -1,
+                1
+            ]
+        },
+        "cfgDownscaling": {
+            "values": [
+                [
+                    0.01
+                ],
+                [
+                    1
+                ],
+                [
+                    1
+                ],
+                [
+                    1
+                ],
+                [
+                    1
+                ]
+            ]
+        },
+        "processDataFlowAlternative": "0",
+        "cfgMomentumScalingBetheBloch": {
+            "values": [
+                [
+                    1,
+                    1
+                ],
+                [
+                    1,
+                    1
+                ],
+                [
+                    1,
+                    1
+                ],
+                [
+                    1,
+                    1
+                ],
+                [
+                    1,
+                    1
+                ]
+            ]
+        },
+        "cfgMomResBins": {
+            "values": [
+                300,
+                -0.6,
+                0.6
+            ]
+        },
+        "cfgBetheBlochParams": {
+            "values": [
+                [
+                    -136.71,
+                    0.441,
+                    0.2269,
+                    1.347,
+                    0.8035,
+                    0.09
+                ],
+                [
+                    -136.71,
+                    0.441,
+                    0.2269,
+                    1.347,
+                    0.8035,
+                    0.09
+                ],
+                [
+                    -239.99,
+                    1.155,
+                    1.099,
+                    1.137,
+                    1.006,
+                    0.09
+                ],
+                [
+                    -321.34,
+                    0.6539,
+                    1.591,
+                    0.8225,
+                    2.363,
+                    0.09
+                ],
+                [
+                    -586.66,
+                    1.859,
+                    4.435,
+                    0.282,
+                    3.201,
+                    0.09
+                ]
+            ]
+        },
+        
+        "cfgZorroCCDBpath": "EventFiltering/Zorro/",
+        "cfgDCAxyBinsDeuterons": {
+            "values": [
+                400,
+                -2,
+                2
+            ]
+        },
+        "cfgSkimmedProcessing": "0",
+        "cfgDCAxyBinsProtons": {
+            "values": [
+                400,
+                -2,
+                2
+            ]
+        },
+        "cfgPtBinsTritons": {
+            "values": [
+                25,
+                0,
+                10
+            ]
+        },
+        "cfgTriggerList": "fHe",
+        "cfgDCAxyBinsAlpha": {
+            "values": [
+                400,
+                -2,
+                2
+            ]
+        },
+        "processData": "0",
+        "cfgFillGenSecondaries": "1",
+        "processMCasData": "0",
+        "processDataFlow": "0",
+        "ccdb-url": "http://alice-ccdb.cern.ch",
+        
+        "cfgTrackCut.TPCnSigmaMax": {
+            "values": [
+                [
+                    -1000,
+                    1000
+                ],
+                [
+                    -1000,
+                    1000
+                ],
+                [
+                    -1000,
+                    1000
+                ],
+                [
+                    -1000,
+                    1000
+                ],
+                [
+                    -1000,
+                    1000
+                ]
+            ]
+        },
+        "cfgTrackCut.TPCnCrossedRowsMin": "140",
+        "cfgTrackCut.DcaMax": {
+            "values": [
+                [
+                    0.0075,
+                    0.01
+                ],
+                [
+                    0.0075,
+                    0.01
+                ],
+                [
+                    0.0075,
+                    0.01
+                ],
+                [
+                    0.0075,
+                    0.01
+                ],
+                [
+                    0.0075,
+                    0.01
+                ]
+            ]
+        },
+        "cfgTrackCut.TPCrigidityMin": "0.",
+        "cfgTrackCut.TPCchi2ClusMax": "1.9",
+        "cfgTrackCut.EtaMax": "0.9",
+        "cfgTrackCut.ITSchi2ClusMax": "3",
+        "cfgTrackCut.ITSnClsMin": "1",
+        "cfgTrackCut.TPCnClsMin": "0",
+        "cfgTrackCut.TPCnCrossedRowsOverFindableMin": "-100",
+        "cfgTrackCut.RapidityMax": "0.5",
+        "cfgTrackCut.RapidityMin": "-0.5",
+        "cfgTrackCut.RapidityToggle": "1",
+        
+        "cfgNsigmaTPCbins": {
+            "values": [
+                100,
+                -5,
+                5
+            ]
+        },
+        "processMatching": "0",
+        "cfgDCAxyBinsHe3": {
+            "values": [
+                400,
+                -2,
+                2
+            ]
+        },
+        "cfgCutPtMaxTree": "15",
+        "cfgNTPCClusBins": {
+            "values": [
+                3,
+                89.5,
+                159.5
+            ]
+        },
+        "cfgPtBinsHe3": {
+            "values": [
+                25,
+                0,
+                10
+            ]
+        },
+        "cfgCMrapidity": "0",
+        "cfgTreeConfig": {
+            "values": [
+                [
+                    1,
+                    0
+                ],
+                [
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0
+                ],
+                [
+                    1,
+                    0
+                ],
+                [
+                    0,
+                    0
+                ]
+            ]
+        },
+        "cfgFillPairTree": "0",
+        "cfgNsigmaTOFbins": {
+            "values": [
+                100,
+                -5,
+                5
+            ]
+        },
+        "cfgCentralityEstimator": "0",
+        "cfgCompensatePIDinTracking": "0",
+        "cfgDeltaTOFmassCutDCAhists": "0.2",
+        "cfgPtBinsAlpha": {
+            "values": [
+                20,
+                0,
+                10
+            ]
+        },
+        "cfgEventSelections": {
+            "values": [
+                [
+                    1
+                ],
+                [
+                    1
+                ],
+                [
+                    1
+                ],
+                [
+                    1
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ]
+            ]
+        },
+        "cfgNsigmaTPCcutDCAhists": "3",
+        "cfgPtBinsProtons": {
+            "values": [
+                100,
+                0,
+                10
+            ]
+        },
+        "cfgDCAxyBinsTritons": {
+            "values": [
+                400,
+                -2,
+                2
+            ]
+        },
+        "processMC": "1",
+        
+        "cfgFlowHist": {
+            "values": [
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ],
+                [
+                    0
+                ]
+            ]
+        },
+        "cfgMaterialCorrection": "2"
+    }
+}

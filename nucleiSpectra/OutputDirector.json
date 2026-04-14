@@ -1,0 +1,10 @@
+{ "OutputDirector": {
+    "debug_mode": true,
+    "resfile": "local_test",
+    "OutputDescriptors": [
+      {
+        "table":"AOD/NUCTABLEMCSEL/0"
+      }
+    ],
+    "ntfmerge": 1
+  } }
