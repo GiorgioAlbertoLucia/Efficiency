@@ -12,12 +12,6 @@
     },
     "internal-dpl-aod-spawner": "",
     "internal-dpl-aod-index-builder": "",
-    "mc-collision-converter": "",
-    "tracks-extra-v002-converter": {
-        "processV000ToV002": "false",
-        "processV001ToV002": "true"
-    },
-    "tracks-extra-spawner": "",
     "eventselection-run3": {
         "timestamp": "{\"verbose\":\"false\",\"fatalOnInvalidTimestamp\":\"false\",\"rct-path\":\"RCT\\\/Info\\\/RunInformation\",\"orbit-reset-path\":\"CTP\\\/Calib\\\/OrbitReset\",\"isRun2MC\":\"-1\"",
         "bcselOpts": "{\"amIneeded\":\"-1\",\"triggerBcShift\":\"0\",\"ITSROFrameStartBorderMargin\":\"-1\",\"ITSROFrameEndBorderMargin\":\"-1\",\"TimeFrameStartBorderMargin\":\"-1\",\"TimeFrameEndBorderMargin\":\"-1\",\"checkRunDurationLimits\":\"false\",\"maxInactiveChipsPerLayer\":{\"values\":[\"8\",\"8\",\"8\",\"111\",\"111\",\"195\",\"195\"]},\"NumberOfOrbitsPerTF\":\"-1\"",
@@ -126,7 +120,7 @@
     },
     "nuclei-spectra": {
         "cfgCompensatePIDinTracking": "false",
-        "cfgTrackCut": "{\"DcaMax\":{\"labels_rows\":[\"proton\",\"deuteron\",\"triton\",\"He3\",\"alpha\"],\"labels_cols\":[\"max DCAxy\",\"max DCAz\"],\"values\":[[\"0.0074999999999999997\",\"0.01\"],[\"0.0074999999999999997\",\"0.01\"],[\"0.0074999999999999997\",\"0.01\"],[\"0.0074999999999999997\",\"0.01\"],[\"0.0074999999999999997\",\"0.01\"]]},\"EtaMax\":\"0.899999976\",\"ITSnClsMin\":\"1\",\"ITSchi2ClusMax\":\"3\",\"RapidityMax\":\"0.5\",\"RapidityMin\":\"-0.5\",\"RapidityToggle\":\"true\",\"TPCchi2ClusMax\":\"1.89999998\",\"TPCnCrossedRowsMin\":\"140\",\"TPCnCrossedRowsOverFindableMin\":\"-100\",\"TPCnClsMin\":\"0\",\"TPCrigidityMin\":\"0\",\"TPCnSigmaMax\":{\"labels_rows\":[\"proton\",\"deuteron\",\"triton\",\"He3\",\"alpha\"],\"labels_cols\":[\"nsigma_min\",\"nsigma_max\"],\"values\":[[\"-1000\",\"1000\"],[\"-1000\",\"1000\"],[\"-1000\",\"1000\"],[\"-1000\",\"1000\"],[\"-1000\",\"1000\"]]}",
+        "cfgTrackCut": "{\"DcaMax\":{\"labels_rows\":[\"proton\",\"deuteron\",\"triton\",\"He3\",\"alpha\"],\"labels_cols\":[\"max DCAxy\",\"max DCAz\"],\"values\":[[\"0.0074999999999999997\",\"0.01\"],[\"0.0074999999999999997\",\"0.01\"],[\"0.0074999999999999997\",\"0.01\"],[\"0.0074999999999999997\",\"0.01\"],[\"0.0074999999999999997\",\"0.01\"]]},\"EtaMax\":\"0.899999976\",\"ITSnClsMin\":\"1\",\"ITSchi2ClusMax\":\"3\",\"RapidityMax\":\"0.5\",\"RapidityMin\":\"-0.5\",\"RapidityToggle\":\"false\",\"TPCchi2ClusMax\":\"1.89999998\",\"TPCnCrossedRowsMin\":\"140\",\"TPCnCrossedRowsOverFindableMin\":\"-100\",\"TPCnClsMin\":\"0\",\"TPCrigidityMin\":\"0\",\"TPCnSigmaMax\":{\"labels_rows\":[\"proton\",\"deuteron\",\"triton\",\"He3\",\"alpha\"],\"labels_cols\":[\"nsigma_min\",\"nsigma_max\"],\"values\":[[\"-1000\",\"1000\"],[\"-1000\",\"1000\"],[\"-1000\",\"1000\"],[\"-1000\",\"1000\"],[\"-1000\",\"1000\"]]}",
         "cfgCentralityEstimator": "0",
         "cfgCMrapidity": "0",
         "cfgCutVertex": "10",

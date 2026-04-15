@@ -12,12 +12,6 @@
     },
     "internal-dpl-aod-spawner": "",
     "internal-dpl-aod-index-builder": "",
-    "mc-collision-converter": "",
-    "tracks-extra-v002-converter": {
-        "processV000ToV002": "false",
-        "processV001ToV002": "true"
-    },
-    "tracks-extra-spawner": "",
     "eventselection-run3": {
         "timestamp": "{\"verbose\":\"false\",\"fatalOnInvalidTimestamp\":\"false\",\"rct-path\":\"RCT\\\/Info\\\/RunInformation\",\"orbit-reset-path\":\"CTP\\\/Calib\\\/OrbitReset\",\"isRun2MC\":\"-1\"",
         "bcselOpts": "{\"amIneeded\":\"-1\",\"triggerBcShift\":\"0\",\"ITSROFrameStartBorderMargin\":\"-1\",\"ITSROFrameEndBorderMargin\":\"-1\",\"TimeFrameStartBorderMargin\":\"-1\",\"TimeFrameEndBorderMargin\":\"-1\",\"checkRunDurationLimits\":\"false\",\"maxInactiveChipsPerLayer\":{\"values\":[\"8\",\"8\",\"8\",\"111\",\"111\",\"195\",\"195\"]},\"NumberOfOrbitsPerTF\":\"-1\"",
@@ -141,7 +135,7 @@
         "cfgTrackTunerParams": "debugInfo=0|updateTrackDCAs=1|updateTrackCovMat=1|updateCurvature=0|updateCurvatureIU=0|updatePulls=0|isInputFileFromCCDB=1|pathInputFile=Users\/m\/mfaggin\/test\/inputsTrackTuner\/pp2023\/pass4\/correct_names|nameInputFile=trackTuner_DataLHC23hPass4_McLHC23k4g.root|pathFileQoverPt=Users\/h\/hsharma\/qOverPtGraphs|nameFileQoverPt=D0sigma_Data_removal_itstps_MC_LHC22b1b.root|usePvRefitCorrections=0|qOverPtMC=-1.|qOverPtData=-1.|nPhiBins=1|autoDetectDcaCalib=false",
         "cfgTrackTunerConfigSource": "1",
         "axisPtQA": "{\"values\":[\"0\",\"0\",\"0.10000000149011612\",\"0.20000000298023224\",\"0.30000001192092896\",\"0.4000000059604645\",\"0.5\",\"0.6000000238418579\",\"0.699999988079071\",\"0.800000011920929\",\"0.8999999761581421\",\"1\",\"1.100000023841858\",\"1.2000000476837158\",\"1.2999999523162842\",\"1.399999976158142\",\"1.5\",\"1.600000023841858\",\"1.7000000476837158\",\"1.7999999523162842\",\"1.899999976158142\",\"2\",\"2.200000047683716\",\"2.4000000953674316\",\"2.5999999046325684\",\"2.799999952316284\",\"3\",\"3.200000047683716\",\"3.4000000953674316\",\"3.5999999046325684\",\"3.799999952316284\",\"4\",\"4.400000095367432\",\"4.800000190734863\",\"5.199999809265137\",\"5.599999904632568\",\"6\",\"6.5\",\"7\",\"7.5\",\"8\",\"9\",\"10\",\"11\",\"12\",\"13\",\"14\",\"15\",\"17\",\"19\",\"21\",\"23\",\"25\",\"30\",\"35\",\"40\",\"50\"]",
-        "cfgRapidityToggle": "true",
+        "cfgRapidityToggle": "false",
         "cfgRapidityMin": "-0.5",
         "cfgRapidityMax": "0.5",
         "cfgRapidityCenterMass": "0",

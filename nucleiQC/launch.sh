@@ -10,7 +10,7 @@
 # mc: /data/galucia/lithium_local/raw/LHC25g12_001_raw.root
 
 LOGFILE="output.log"
-CONF="-b --configuration json://configuration.json --shm-segment-size 800000000000 --aod-memory-rate-limit 50000000000"
+CONF="-b --configuration json://configuration.json --shm-segment-size 80000000000000 --aod-memory-rate-limit 5000000000000"
 #CONF="-b --configuration json://configuration_mc.json"
 OUTPUT_DIR="OutputDirector.json"
 #OUTPUT_DIR="OutputDirector_mc.json"
@@ -20,11 +20,11 @@ OUTPUT_DIR="OutputDirector.json"
 o2-analysis-lf-nucleiqc $CONF |
     
     #o2-analysis-mc-converter $CONF|
-    o2-analysis-mccollision-converter $CONF| 
+    #o2-analysis-mccollision-converter $CONF| 
     #o2-analysis-run2bcinfos-converter $CONF |
 
     o2-analysis-propagationservice $CONF |
-    o2-analysis-tracks-extra-v002-converter $CONF |
+    #o2-analysis-tracks-extra-v002-converter $CONF |
     o2-analysis-event-selection-service $CONF |
     o2-analysis-pid-tof-merge $CONF |
     o2-analysis-pid-tpc-service $CONF |

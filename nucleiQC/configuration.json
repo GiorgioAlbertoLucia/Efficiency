@@ -678,7 +678,7 @@
     "cfgRapidityMax": "0.5",
     "cfgRapidityMin": "-0.5",
     "cfgRapidityCenterMass": "0",
-    "cfgRapidityToggle": "1",
+    "cfgRapidityToggle": "0",
 
     "cfgCutNclusCrossedRowsTPC": "140",
     "cfgCutChi2PerClusterTPC": "1.9",

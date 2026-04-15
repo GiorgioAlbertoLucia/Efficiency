@@ -530,7 +530,7 @@
         "cfgTrackCut.TPCnCrossedRowsOverFindableMin": "-100",
         "cfgTrackCut.RapidityMax": "0.5",
         "cfgTrackCut.RapidityMin": "-0.5",
-        "cfgTrackCut.RapidityToggle": "1",
+        "cfgTrackCut.RapidityToggle": "0",
         
         "cfgNsigmaTPCbins": {
             "values": [
