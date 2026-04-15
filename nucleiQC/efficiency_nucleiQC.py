@@ -11,7 +11,7 @@ import argparse
 
 import sys
 sys.path.append('../../')
-from utils.particles import ParticlePDG
+from torchic.physics.particles import PARTICLES
 
 if __name__ == '__main__':
 
@@ -42,7 +42,7 @@ if __name__ == '__main__':
         prepath = '/'.join(args.output.split('/')[:-1])
         output_path =  prepath + '/' + particle + '/' + args.output.split('/')[-1]
         
-        pdg = ParticlePDG[particle]
+        pdg = PARTICLES[particle].pdg
         charge = 2 if particle == 'He' else 1
         PT_MAX = 10 if particle == 'He' else 5
 
@@ -57,8 +57,8 @@ if __name__ == '__main__':
         h_den = particle_dataset.build_th1('fgSignedPt', AxisSpec(40, -PT_MAX, PT_MAX, 'Generated', 'Generated;#it{p}_{T} (GeV/c)'))
 
         h_flag9 = particle_dataset.build_th1('fFlags_bit9', AxisSpec(2, -0.5, 1.5, 'bits'))
-        h_dcaxy = particle_dataset.build_th1('fDCAxy', AxisSpec(200, -0.5, 0.5, ';DCA_{xy} (cm);'))
-        h_dcaz = particle_dataset.build_th1('fDCAz', AxisSpec(200, -0.5, 0.5, ';DCA_{z} (cm);'))
+        h_dcaxy = particle_dataset.build_th1('fDCAxy', AxisSpec(200, -0.05, 0.05, ';DCA_{xy} (cm);'))
+        h_dcaz = particle_dataset.build_th1('fDCAz', AxisSpec(200, -0.05, 0.05, ';DCA_{z} (cm);'))
 
         h_eff = build_efficiency(h_den, h_num, name='nucleiQC', xtitle='#it{p}_{T} (GeV/c)', ytitle='#varepsilon')
 

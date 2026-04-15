@@ -12,7 +12,7 @@ import argparse
 
 import sys
 sys.path.append('../../')
-from utils.particles import ParticlePDG, ParticleMasses, ParticleLabels
+from torchic.physics.particles import PARTICLES
 
 if __name__ == '__main__':
     
@@ -27,6 +27,9 @@ if __name__ == '__main__':
     
     dataset = Dataset.from_root(args.input, 'O2nuctablemcsel', 'DF*')
     print(dataset.columns)
+    
+    dataset.query('abs(fDCAxy) < 0.0075 or abs(fDCAxy) > 990', inplace=True)
+    dataset.query('abs(fDCAxy) < 0.01 or abs(fDCAz) > 990', inplace=True)
     
     read_bit_from_flags =  lambda x, indexbit: (x >> indexbit) & 0b1
 
@@ -47,8 +50,8 @@ if __name__ == '__main__':
         prepath = '/'.join(args.output.split('/')[:-1])
         output_path =  prepath + '/' + particle + '/' + args.output.split('/')[-1]
         
-        pdg = ParticlePDG[particle]
-        mass = ParticleMasses[particle]
+        pdg = PARTICLES[particle].pdg
+        mass = PARTICLES[particle].mass
         charge = 2 if particle == 'He' else 1
         PT_MAX = 10 if particle == 'He' else 5
 
@@ -72,8 +75,8 @@ if __name__ == '__main__':
 
         h_eta = particle_dataset.build_th1('fgEta', AxisSpec(100, -5, 5, 'gen_eta'))
         h_y = particle_dataset.build_th1('fgY', AxisSpec(100, -5, 5, 'gen_y'))
-        h_dcaxy = particle_dataset.build_th1('fDCAxy', AxisSpec(200, -0.5, 0.5, ';DCA_{xy} (cm);'))
-        h_dcaz = particle_dataset.build_th1('fDCAz', AxisSpec(200, -0.5, 0.5, ';DCA_{z} (cm);'))
+        h_dcaxy = particle_dataset.build_th1('fDCAxy', AxisSpec(200, -0.05, 0.05, ';DCA_{xy} (cm);'))
+        h_dcaz = particle_dataset.build_th1('fDCAz', AxisSpec(200, -0.05, 0.05, ';DCA_{z} (cm);'))
         
         h_eff = build_efficiency(h_den, h_num, name='nucleiSpectra', xtitle='#it{p}_{T} (GeV/#it{c})', ytitle='#varepsilon')
 
@@ -95,6 +98,8 @@ if __name__ == '__main__':
         h_eff.Write('efficiency')
         h_eta.Write('gen_eta')
         h_y.Write('gen_y')
+        h_dcaxy.Write('dcaxy')
+        h_dcaz.Write('dcaz')
         outfile.Close()
         
         for hist in [h_num, h_den, h_eff, h_eta, h_y, h_dcaxy, h_dcaz]:
